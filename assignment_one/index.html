@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARDHI</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- header -->
+
+    <header class="container group">
+        <h1 class="logo">
+            <a href="index.html">Ardhi Survey form</a>
+        </h1><br><br>
+        <nav class="nav primary-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Our services</a>
+            <a href="About.html">About</a>
+        </nav><br>
+
+        <h3 class="tagline">May 16 &ndash; 18th &mdash; Nakuru County, Kenya</h3><br>
+    </header>
+
+    <form action="/survey.php">
+        <section class="survey">
+            <section>
+                <p>What plants do you mainly grow?</p>
+                <input type="checkbox" id="Plant1" name="Plant1" value="Coffee">
+                <label for="Plant1"> Coffee</label><br>
+                <input type="checkbox" id="Plant2" name="Plant2" value="Tea">
+                <label for="Plant2"> Tea</label><br>
+                <input type="checkbox" id="Plant3" name="Plant3" value="Cocoa">
+                <label for="Plant3"> Cocoa</label><br>
+                <input type="checkbox" id="Plant4" name="Plant4" value="Other">
+                <label for="Plant4"> Other</label>
+                <p>Please specify:</p>
+                <input id="userInput" size="40">
+            </section>
+            <section>
+                <p>What organic or inorganic fertilizers do you use?</p>
+                <input id="userInput" size="45">
+            </section>
+        
+            <p>What are the main pests affecting your crops?</p>
+            <input id="userInput" size="45">
+            <p>What pesticides do you use for the above mentioned crops?</p>
+            <input id="userInput" size="50">
+            <p>Do you use any biopesticides, if so which ones?</p>
+            <input id="userInput" size="47">
+            <section>
+                <p>What is the average farms output annually in tonnes?</p>
+                <input type="radio" id="range1" name="range" value="0-5">
+                <label for="range1">0-5</label><br>
+                <input type="radio" id="range2" name="range" value="5-10">
+                <label for="range2">5-10</label><br>
+                <input type="radio" id="range3" name="range" value="10-15">
+                <label for="range3">10-15</label><br>
+                <input type="radio" id="range4" name="range" value="15>">
+                <label for="range4">>15</label>
+            </section>
+            <section>
+                <p>What is the average profit made annually?</p>
+                <input type="radio" id="Profit1" name="Profit" value="0-5000000">
+                <label for="Profit1">0-5,000,000</label><br>
+                <input type="radio" id="Profit2" name="Profit" value="5000000-10000000">
+                <label for="Profit2">5,000,000-10,000,000</label><br>
+                <input type="radio" id="Profit3" name="Profit" value=">10000000">
+                <label for="Profit3">>10,000,000</label><br><br>
+            </section>
+        
+            <button onclick="myFunction()">Submit</button>
+        </section>
+    </action>
+</body>
+</html>
